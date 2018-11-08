@@ -1,4 +1,4 @@
-## Plotting Iris Data by matplotlib on Flask
+## Plotting iris data by matplotlib & seaborn on Flask
 아래 명령을 실행한 후
 ```bash
 python app.py
