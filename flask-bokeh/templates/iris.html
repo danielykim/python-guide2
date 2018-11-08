@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.1.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.1.min.css"
+    rel="stylesheet" type="text/css">
+
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.1.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.1.min.js"></script>
+
+<!-- https://bokeh.pydata.org/en/latest/docs/user_guide/embed.html -->
+{{ bokeh_script|safe }}
+
+</head>
+
+<body>
+  {{ bokeh_div|safe }}
+</body>
+
+</html>
