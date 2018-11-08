@@ -6,4 +6,7 @@ python bokeh_app.py
 
 http://localhost:5000/ 에 접속해서 확인하면 됩니다.
 
-[출처](https://bokeh.pydata.org/en/latest/docs/gallery/iris.html)
+
+## 참고 자료
+- http://flask.pocoo.org/docs/1.0/quickstart/
+- https://bokeh.pydata.org/en/latest/docs/gallery/iris.html
