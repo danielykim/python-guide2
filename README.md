@@ -14,6 +14,7 @@
   - 웹에서 데이터를 가져와서 원하는 내용을 추출하는 방법을 소개합니다.
 - `practical-pandas.ipynb`
   - 실전에서 사용하는 기능 위주로 `pandas` 사용법을 소개합니다.
+  - 본 자료에서는 주로 [iris](https://archive.ics.uci.edu/ml/datasets/iris) 데이터를 다룹니다.
 - `practical-matplotlib-seaborn.ipynb`
   - [MNIST](http://yann.lecun.com/exdb/mnist/), [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist), [iris](https://archive.ics.uci.edu/ml/datasets/iris) 데이터를 시각화하는 방식 위주로 `matplotlib` 사용법을 소개합니다.
 
