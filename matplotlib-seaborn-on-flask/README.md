@@ -4,7 +4,7 @@
 python app.py
 ```
 
-http://localhost:5000/ 에 접속해서 확인하면 됩니다.
+브라우저에서 http://localhost:5000/ 에 접속해서 확인하면 됩니다.
 
 
 ## 참고 자료
