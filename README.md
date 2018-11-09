@@ -12,6 +12,7 @@
 # 내용 소개
 - `Web-Crawling-requests-bs4.ipynb`
   - 웹에서 데이터를 가져와서 원하는 내용을 추출하는 방법을 소개합니다.
+  - [requests](https://github.com/requests/requests), [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [wikipedia](https://github.com/goldsmith/Wikipedia), [newspaper3k](https://github.com/codelucas/newspaper) 등을 다룹니다.
 - `practical-pandas.ipynb`
   - 실전에서 사용하는 기능 위주로 `pandas` 사용법을 소개합니다.
   - 본 자료에서는 주로 [iris](https://archive.ics.uci.edu/ml/datasets/iris) 데이터를 다룹니다.
