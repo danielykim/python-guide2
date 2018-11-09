@@ -1,5 +1,5 @@
 ## Plotting iris data by matplotlib & seaborn on Flask
-아래 명령을 실행한 후
+Anaconda Prompt에서 아래 명령을 실행한 후
 ```bash
 python app.py
 ```
@@ -8,4 +8,6 @@ python app.py
 
 
 ## 참고 자료
-- http://flask.pocoo.org/docs/1.0/quickstart/
+- https://palletsprojects.com/p/flask/
+- http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates
+- https://gist.github.com/ianschenck/977379a91154fe264897

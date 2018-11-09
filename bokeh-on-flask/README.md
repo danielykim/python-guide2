@@ -1,5 +1,5 @@
 ## Plotting Iris Data by Bokeh on Flask
-아래 명령을 실행한 후
+Anaconda Prompt에서 아래 명령을 실행한 후
 ```bash
 python bokeh_app.py
 ```
