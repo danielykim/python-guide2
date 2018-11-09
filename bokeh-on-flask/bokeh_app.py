@@ -4,6 +4,7 @@ from flask import render_template
 
 import pandas as pd
 
+# https://bokeh.pydata.org/en/latest/docs/user_guide/embed.html#components
 from bokeh.plotting import figure
 from bokeh.embed import components
 
@@ -14,20 +15,35 @@ app.debug = False
 
 @app.route("/")
 def plot_flowers():
+    """Plot scatter plot of petal length vs petal width
+    """
+    
     flowers = pd.read_csv('http://danielykim.me/data/iris.csv')
 
-    colormap = {'setosa': '#4C72B0', 'versicolor': '#DD8452', 'virginica': '#55A868'}
-    colors = [colormap[x] for x in flowers['species']]
+    # https://bokeh.pydata.org/en/latest/docs/gallery/iris.html
+    colormap = {
+        'setosa'    : '#4C72B0', 
+        'versicolor': '#DD8452', 
+        'virginica': '#55A868'
+        }
+    colors = [ colormap[x] for x in flowers['species'] ]
 
     p = figure(title = "Iris Morphology")
+    
     p.xaxis.axis_label = 'Petal Length'
     p.yaxis.axis_label = 'Petal Width'
 
     p.circle(flowers["petal_length"], flowers["petal_width"],
              color=colors, fill_alpha=0.2, size=10)
-
+    
+    # https://bokeh.pydata.org/en/latest/docs/user_guide/embed.html#components
     script, div = components(p)
 
+    """
+    "iris.html" is located at "templates/"
+    
+    See also: http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates
+    """
     return render_template('iris.html', bokeh_script=script, bokeh_div=div)
 
 
