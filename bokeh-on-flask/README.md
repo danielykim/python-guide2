@@ -8,8 +8,8 @@ http://localhost:5000/ 에 접속해서 확인하면 됩니다.
 
 
 ## `bokeh_app.py` 설명
-1. Backend에서 `pandas`로 데이터를 가져옵니다.
-2. `bokeh`로 Interactive Plot을 그립니다.
+1. Backend에서 [pandas](https://pandas.pydata.org/)로 데이터를 가져옵니다.
+2. [bokeh](https://bokeh.pydata.org)로 Interactive Plot을 그립니다.
 3. Interactive Plot을 templates/iris.html 로 넘깁니다.
 
 

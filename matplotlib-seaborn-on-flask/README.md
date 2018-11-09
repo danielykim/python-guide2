@@ -8,8 +8,8 @@ python app.py
 
 
 ## `app.py` 설명
-1. Backend에서 `pandas`로 데이터를 가져옵니다.
-2. `matplotlib`와 `seaborn`을 이용하여 그림을 그립니다.
+1. Backend에서 [pandas](https://pandas.pydata.org/)로 데이터를 가져옵니다.
+2. [matplotlib](https://matplotlib.org/)와 [seaborn](https://seaborn.pydata.org/)을 이용하여 그림을 그립니다.
 3. 그림을 base64로 Encoding 합니다.
 4. Encoding한 그림을 templates/temp.html 로 넘겨줍니다.
 
