@@ -29,7 +29,7 @@ if __name__ == "__main__":
         # Disable twisted signal handlers in development only.
         reactor_args['installSignalHandlers'] = 0
         # Turn on auto reload.
-        import werkzeug.serving
-        run_twisted_wsgi = werkzeug.serving.run_with_reloader(run_twisted_wsgi)
+        from werkzeug.serving import run_with_reloader
+        run_twisted_wsgi = run_with_reloader(run_twisted_wsgi)
 
     run_twisted_wsgi()
