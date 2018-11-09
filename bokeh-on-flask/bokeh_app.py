@@ -42,7 +42,8 @@ def plot_flowers():
     """
     "iris.html" is located at "templates/"
     
-    See also: http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates
+    See also: 
+        http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates
     """
     return render_template('iris.html', bokeh_script=script, bokeh_div=div)
 
@@ -58,15 +59,19 @@ if __name__ == "__main__":
         from twisted.web.wsgi import WSGIResource
 
         resource = WSGIResource(reactor, reactor.getThreadPool(), app)
+        
         site = Site(resource)
+        
         reactor.listenTCP(5000, site)
         reactor.run(**reactor_args)
         
     if app.debug:
         # Disable twisted signal handlers in development only.
         reactor_args['installSignalHandlers'] = 0
+        
         # Turn on auto reload.
         from werkzeug.serving import run_with_reloader
+        
         run_twisted_wsgi = run_with_reloader(run_twisted_wsgi)
 
     run_twisted_wsgi()
