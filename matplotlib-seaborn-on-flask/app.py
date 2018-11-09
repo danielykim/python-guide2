@@ -31,11 +31,8 @@ def plot_flowers():
     x_label, y_label = 'petal_length', 'petal_width'
 
     plt.scatter(
-        flowers[x_label], 
-        flowers[y_label], 
-        c = colors,
-        alpha = 0.33
-        )
+        flowers[x_label], flowers[y_label], 
+        c = colors, alpha = 0.33)
 
     plt.xlabel(x_label)
     plt.ylabel(y_label)
@@ -50,6 +47,10 @@ def plot_flowers():
 
     base64_image = img_b64.decode('utf-8')
 
+    """
+    See also:
+        http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates
+    """
     return render_template('temp.html', base64_image=base64_image)
 
 
@@ -64,15 +65,19 @@ if __name__ == "__main__":
         from twisted.web.wsgi import WSGIResource
 
         resource = WSGIResource(reactor, reactor.getThreadPool(), app)
+        
         site = Site(resource)
+        
         reactor.listenTCP(5000, site)
         reactor.run(**reactor_args)
         
     if app.debug:
         # Disable twisted signal handlers in development only.
         reactor_args['installSignalHandlers'] = 0
+        
         # Turn on auto reload.
         from werkzeug.serving import run_with_reloader
+        
         run_twisted_wsgi = run_with_reloader(run_twisted_wsgi)
 
     run_twisted_wsgi()
